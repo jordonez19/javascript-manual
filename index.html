@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Javascript - Basico</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="content">
+        <center>
+            <h1 class="main-title">Javascript Basico</h1>
+            <img src="./img/js.png" alt="">
+        </center>
+        <p>
+            Antes de comenzar, es importante saber que JavaScript es un lenguaje de programación muy popular que se
+            utiliza en la web para crear páginas web interactivas y dinámicas. Fue creado en 1995 por Brendan Eich
+            mientras trabajaba en Netscape. <br><br>
+
+            Una de las características principales de JavaScript es que se ejecuta en el lado del cliente, lo que
+            significa que se ejecuta en el navegador del usuario y no en el servidor. Se utiliza para agregar
+            interactividad y dinamismo a los sitios web, permitiendo a los usuarios interactuar con los elementos de la
+            página, realizar acciones y ver resultados en tiempo real. <br><br>
+
+            En el lado del cliente, JavaScript se utiliza para validar formularios, crear efectos visuales, animar
+            elementos de la página, crear botones que realicen una acción al hacer clic, entre otros. También se utiliza
+            en el lado del servidor, mediante plataformas como Node.js, para desarrollar aplicaciones web y servicios
+            web. <br><br>
+
+            JavaScript es un lenguaje de programación orientado a objetos, interpretado y de alto nivel. Es muy versátil
+            y se integra bien con otros lenguajes y tecnologías. Es compatible con HTML y CSS, lo que significa que se
+            puede utilizar para interactuar con la estructura y el estilo de una página web. <br><br>
+
+            En resumen, JavaScript es un lenguaje de programación muy importante para el desarrollo web. Es utilizado
+            tanto en el lado del cliente como del servidor, y es capaz de agregar interactividad y dinamismo a las
+            páginas web, lo que lo convierte en una herramienta fundamental para cualquier desarrollador web. <br><br>
+        </p>
+        <!-- parte 1 -->
+        <h2 class="title">Parte 1: Introducción a JavaScript</h2>
+        <p>
+            <b>1.</b> Lo primero que necesitas hacer es abrir un editor de código. Puedes utilizar el Bloc de notas,
+            Sublime Text,
+            Visual Studio Code o cualquier otro editor que te guste, en mi caso es visual estudio code y puedes
+            descargarlo <a href="https://code.visualstudio.com/download">aqui</a> .
+            <br><br><b>2.</b>Crea un archivo HTML vacío. Puedes hacerlo abriendo el editor de código y guardando un
+            archivo con la
+            extensión ".html".
+            <br><br><b>3.</b>Abre el archivo HTML en tu navegador web favorito, si estas utilizando vs code puedes
+            utilizar la extencion live server para abrir un puerto que te mostrar los cambios en tiempo real.
+            <br><br><b>4.</b>Ahora, abre la consola del navegador. En Google Chrome, puedes hacer clic con el botón
+            derecho del mouse en
+            cualquier parte de la página web y seleccionar "Inspeccionar", o simplemente oprime la tecla F12. Luego, en
+            la parte superior del panel que
+            aparece, haz clic en "Consola".
+            <br><br><b>5.</b>En la consola, escribe el siguiente código:
+        </p>
+        <div class="code-content">
+            <p id="myText1">console.log("¡Hola, Mundo!");</p>
+            <button onclick="copyText(document.getElementById('myText1'))"><i class="fa-regular fa-copy"></i></button>
+        </div>
+        <p>
+            <br><br><b>6.</b>Haz clic en "Enter" para ejecutar el código. Deberías ver el mensaje "¡Hola, mundo!" en la
+            consola.
+        </p>
+        <!-- end parte 1 -->
+        <!--  parte 2 -->
+        <h2 class="title">Parte 2: Variables y tipos de datos en JavaScript</h2>
+
+        <p>
+            JavaScript utiliza variables para almacenar y manipular datos. En esta sección, aprenderás cómo declarar
+            variables y los tipos de datos que puedes utilizar.
+            <br><br><b>1. </b>En la consola del navegador, escribe el siguiente código:
+        </p>
+
+        <div class="code-content">
+            <p id="myText2">
+                let nombre = "Juan"; <br>
+                let edad = 25; <br>
+                let casado = false; <br>
+                console.log(nombre); <br>
+                console.log(edad); <br>
+                console.log(casado);
+            </p>
+            <button onclick="copyText(document.getElementById('myText2'))"><i class="fa-regular fa-copy"></i></button>
+        </div>
+
+        <p>
+            <b>2.</b> Haz clic en "Enter" para ejecutar el código. Deberías ver el valor de la variable <b>nombre</b>
+            (que es "Juan"), el valor de la variable <b>edad</b> (que es 25) y el valor de la variable <b>casado</b>
+            (que es false).
+            <br><br><b>Explicación</b>: En este código, hemos declarado tres variables. La variable nombre es una cadena
+            de caracteres (también conocida como "string" en inglés), la variable edad es un número entero (también
+            conocido como "integer" en inglés) y la variable casado es un valor booleano (es decir, <b>true</b> o
+            <b>false</b>).
+        </p>
+        <!-- end parte 2 -->
+        <!--  parte 3 -->
+
+
+        <h2 class="title">
+            Parte 3: Operadores en JavaScript
+        </h2>
+        <p>
+            JavaScript utiliza operadores para realizar operaciones en datos. En esta sección, aprenderás los operadores
+            básicos que puedes utilizar.
+
+            <br><br><b>1.</b> En la consola del navegador, escribe el siguiente código:
+        </p>
+
+        <div class="code-content">
+            <p id="myText3">
+                let x = 10;<br>
+                let y = 5;<br>
+                console.log(x + y);<br>
+                console.log(x - y);<br>
+                console.log(x * y);<br>
+                console.log(x / y);
+            </p>
+            <button onclick="copyText(document.getElementById('myText3'))"><i class="fa-regular fa-copy"></i></button>
+        </div>
+
+        <p>
+
+            <b>2.</b> Haz clic en "Enter" para ejecutar el código. Deberías ver la suma, resta, multiplicación y
+            división de las
+            variables <b>x</b> e <b>y</b>.
+
+            <br><br><b>Explicación</b>: En este código, estamos utilizando los operadores aritméticos
+            <b>+</b>,<b>-</b>,<b>*</b> y <b> /</b> para
+            realizar operaciones
+            matemáticas en las variables <b>x</b> e <b>y</b>.
+        </p>
+        <!-- end parte 3 -->
+        <!-- parte 4 -->
+
+        <h2 class="title">
+            Parte 4: Condicionales en JavaScript
+        </h2>
+        <p>
+
+            JavaScript utiliza condicionales para tomar decisiones basadas en condiciones. En esta sección, aprenderás
+            cómo
+            utilizar la declaración if en JavaScript.
+
+            <br><br><b>1.</b> En la consola del navegador, escribe el siguiente código:
+        </p>
+
+        <div class="code-content">
+            <p id="myText4">
+                let edad = 18;<br>
+
+                if (edad >= 18) {<br>
+
+                console.log("Eres mayor de edad");<br>
+                } else {<br>
+                console.log("Eres menor de edad");<br>
+                }
+            </p>
+            <button onclick="copyText(document.getElementById('myText4'))"><i class="fa-regular fa-copy"></i></button>
+        </div>
+
+        <p>
+
+            <b>2.</b> Haz clic en "Enter" para ejecutar el código. Deberías ver el mensaje "Eres mayor de edad".
+            <br><br><b>Explicación</b>: En este código, estamos utilizando la declaración if para verificar si la
+            variable edad es mayor o
+            igual a 18. Si es así, se ejecutará el primer bloque de código (que imprimirá "Eres mayor de edad"). Si no
+            es
+            así, se ejecutará el segundo bloque de código (que imprimirá "Eres menor de edad").
+        </p>
+        <!-- end parte 4 -->
+        <!-- parte 5 -->
+        <h2 class="title">
+            Parte 5: Bucles en JavaScript
+        </h2>
+        <p>
+
+            JavaScript utiliza bucles para repetir bloques de código. En esta sección, aprenderás cómo utilizar el bucle
+            for
+            en JavaScript.
+
+            <b>1.</b> En la consola del navegador, escribe el siguiente código:
+        </p>
+        <div class="code-content">
+            <p id="myText5">
+                for (let i = 0; i < 5; i++) {<br> console.log(i); <br>}
+            </p>
+            <button onclick="copyText(document.getElementById('myText5'))"><i class="fa-regular fa-copy"></i></button>
+        </div>
+
+        <p>
+
+            <b>2.</b> Haz clic en "Enter" para ejecutar el código. Deberías ver los números del 0 al 4 en la consola.
+
+            <br><br><b>Explicación</b>: En este código, estamos utilizando el bucle <b>for</b> para imprimir los números
+            del 0 al 4 en la consola. La variable <b> i</b> comienza en 0, se repite mientras <b>i</b> sea menor que 5 y
+            se incrementa en 1 en cada iteración del bucle.
+        </p>
+        <!-- end parte 5 -->
+        <!--  parte 6 -->
+
+        <h2 class="title">
+            Parte 6: Funciones en JavaScript
+        </h2>
+
+        <p>
+            JavaScript utiliza funciones para agrupar bloques de código que realizan una tarea específica. <br> En esta sección, aprenderás cómo definir y llamar funciones en JavaScript.
+
+            <b>1.</b> En la consola del navegador, escribe el siguiente código:
+
+        </p>
+
+        <div class="code-content">
+            <p id="myText5">
+                function suma(a, b) { <br>
+                    return a + b; <br>
+                    } <br>
+                    console.log(suma(2, 3)); <br>
+            </p>
+            <button onclick="copyText(document.getElementById('myText5'))"><i class="fa-regular fa-copy"></i></button>
+        </div>
+
+
+        <p>
+            <b>2.</b> Haz clic en "Enter" para ejecutar el código. Deberías ver el número 5 en la consola.
+            <br><br><b>Explicación</b>: En este código, estamos definiendo una función llamada suma que toma dos
+            parámetros
+            (a y b) y devuelve la suma de esos dos valores. Luego, estamos llamando a la función suma con los argumentos
+            2 y
+            3, y estamos imprimiendo el resultado en la consola.
+        </p>
+        <!-- end parte 6 -->
+
+        <!--  parte 7 -->
+        <h2 class="title">
+
+            Parte 7: Objetos en JavaScript
+        </h2>
+        <p>
+
+            JavaScript utiliza objetos para representar datos estructurados. En esta sección, aprenderás cómo definir y
+            acceder a objetos en JavaScript.
+
+            <br><br><b>1.</b> En la consola del navegador, escribe el siguiente código:
+        </p>
+
+        <div class="code-content">
+            <p id="myText7">
+                let persona = { <br>
+                nombre: "Juan", <br>
+                edad: 25, <br>
+                direccion: { <br>
+                calle: "Calle 123", <br>
+                ciudad: "Bogotá" <br>
+                } <br>
+                }; <br>
+                console.log(persona.nombre); <br>
+                console.log(persona.edad); <br>
+                console.log(persona.direccion.ciudad); <br>
+            </p>
+            <button onclick="copyText(document.getElementById('myText7'))"><i class="fa-regular fa-copy"></i></button>
+        </div>
+
+        <p>
+
+            <b>2.</b> Haz clic en "Enter" para ejecutar el código. Deberías ver el nombre, la edad y la ciudad de la
+            persona en la
+            consola.
+            <br><br><b>Explicación</b>: En este código, estamos definiendo un objeto llamado <b>persona</b> con tres
+            propiedades (<b>nombre, edad y direccion</b>). La propiedad direccion es a su vez otro objeto con dos
+            propiedades (<b>calle y ciudad</b>). Luego,
+            estamos
+            accediendo a las propiedades del objeto <b>persona</b> utilizando la notación de punto.
+        </p>
+
+
+
+        <!-- end parte 7 -->
+
+
+
+
+
+
+
+        <br><br><br><br><br><br><br><br><br><br>
+
+
+    </div>
+    <script>
+        function copyText(element) {
+            var text = element.innerText;
+            var textarea = document.createElement("textarea");
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+        }
+
+    </script>
+</body>
+
+</html>
